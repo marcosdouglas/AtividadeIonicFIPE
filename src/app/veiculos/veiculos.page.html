@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>veiculos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar value="Ionic"></ion-searchbar>
+
+      <div style="margin: 10px; padding: 15px; background: #b6ecfd;"
+   *ngFor="let cod_marca of codigo_marcas">
+    <div style="display: inline-block;">
+      {{marcas[cod_marca].name}}
+    </div>
+  </div>
+</ion-content>
