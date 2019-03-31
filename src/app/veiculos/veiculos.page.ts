@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+//import { NavParams } from '@ionic/angular';
 import { FipeService } from '../services/fipe.service';
-//import { NavParams } from 'ionic-angular';
+import { HomePageModule } from '../home/home.module';
+import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-veiculos',
@@ -9,13 +10,13 @@ import { FipeService } from '../services/fipe.service';
   styleUrls: ['./veiculos.page.scss'],
 })
 export class VeiculosPage implements OnInit {
-//    navParams: NavParams;
-    codigo_marcas: any = [];
+   codigo_marcas: any = [];
     marcas: any;
     veiculo: any; 
     
   constructor(private fipeService: FipeService) {
-    this.fipeService.getMarcas().subscribe(
+      //this.veiculo = this.navParams.get();
+      this.fipeService.getMarcas(HomePage.veiculo).subscribe(
       resposta => {
         console.log(resposta);
         this.marcas = resposta;

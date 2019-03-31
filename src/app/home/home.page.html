@@ -10,8 +10,9 @@
     <div style="  margin: auto;
   width: 80%;
   padding: 9%;margin-top: 18%;">
-        <ion-button expand="full" color="primary" Onclick="listaCarros();">Carros</ion-button>
-        <ion-button expand="full" color="primary" Onclick="listaMotos();">Motos</ion-button>
-        <ion-button expand="full" color="primary" Onclick="listaCaminhoes();">Caminhões</ion-button>
+        <ion-button expand="full" color="primary" (click)="listaMarcas('carros');"> Carros</ion-button>
+        <ion-button expand="full" color="primary" (click)="listaMarcas('motos');">Motos</ion-button>
+        <ion-button expand="full" color="primary" (click)="listaMarcas('Caminhoes');">Caminhões</ion-button>
     </div>
 </ion-content>
+

@@ -9,7 +9,7 @@ export class FipeService {
 
   constructor(private httpClient: HttpClient) { }
     
-  getMarcas(){
-      return this.httpClient.get("http://fipeapi.appspot.com/api/1/carros/marcas.json");
+  getMarcas(veiculo: String){
+      return this.httpClient.get("http://fipeapi.appspot.com/api/1/"+veiculo+"/marcas.json");
   }
 }
