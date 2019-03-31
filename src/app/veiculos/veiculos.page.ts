@@ -27,6 +27,10 @@ export class VeiculosPage implements OnInit {
     );
   }
 
+  listaModelo(codigo_marcas: String){
+    console.log(codigo_marcas);
+  }
+
   ngOnInit() {
   }
 
