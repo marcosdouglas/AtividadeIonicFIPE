@@ -5,5 +5,13 @@
 </ion-header>
 
 <ion-content>
+  <ion-searchbar
+  [(ngModel)]="myInput">
+</ion-searchbar>
 
+    <ion-list>
+      <ion-item ion-item *ngFor="let cod_modelo of codigo_modelos" >
+        {{modelos[cod_modelo].name}}
+      </ion-item>
+    </ion-list>
 </ion-content>
