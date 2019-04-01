@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>modelos</ion-title>
+    <ion-title>anos</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,8 +10,8 @@
 </ion-searchbar>
 
     <ion-list>
-      <ion-item ion-item *ngFor="let cod_modelo of codigo_modelos" (click)="listaAnos(modelos[cod_modelo].id);">
-        {{modelos[cod_modelo].name}}
+      <ion-item ion-item *ngFor="let cod_ano of codigo_anos" (click)="listaFipe(anos[cod_ano].id);">
+        {{anos[cod_ano].name}}
       </ion-item>
     </ion-list>
 </ion-content>
