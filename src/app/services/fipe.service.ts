@@ -12,8 +12,8 @@ export class FipeService {
 
   constructor(private httpClient: HttpClient) { }
     
-  getMarcas(veiculo: String){
-      return this.httpClient.get("http://fipeapi.appspot.com/api/1/"+veiculo+"/marcas.json");
+  getMarcas(id: String){
+      return this.httpClient.get("http://fipeapi.appspot.com/api/1/"+id+"/marcas.json");
   }
   getModelos(id: String){
     return this.httpClient.get("http://fipeapi.appspot.com/api/1/"+HomePage.veiculo+"/veiculos/"+id+".json");

@@ -10,8 +10,8 @@ export class HomePage {
   public static id_marca: String;
   public static id_ano: String;
   public static id_fipe: String;
+  public static veiculo: String;
    constructor(private navCtrl: NavController) { }
-    public static veiculo: String;
     listaMarcas(veiculo: String){
         HomePage.veiculo = veiculo;
         this.navCtrl.navigateForward('veiculos');
