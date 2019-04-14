@@ -5,8 +5,14 @@
 </ion-header>
 
 <ion-content>
+<<<<<<< HEAD
   <ion-searchbar (ionInput)="getItems($event)">
   </ion-searchbar>
+=======
+  <ion-searchbar
+  [(ngModel)]="myInput">
+</ion-searchbar>
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
 
     <ion-list>
       <ion-item ion-item *ngFor="let cod_marca of codigo_marcas" (click)="listaModelo(marcas[cod_marca].id);">

@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FipeService } from '../services/fipe.service';
 import { NavController } from '@ionic/angular';
+<<<<<<< HEAD
+=======
+import { ModelosPage } from '../modelos/modelos.page';
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
 import { HomePage } from '../home/home.page';
 
 @Component({
@@ -9,8 +13,13 @@ import { HomePage } from '../home/home.page';
   styleUrls: ['./anos.page.scss'],
 })
 export class AnosPage implements OnInit {
+<<<<<<< HEAD
   anos : any = [];
   allanos : any = [];
+=======
+  //public static id_fipe: String;
+  anos : any = [];
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
   codigo_anos: any;
 
   constructor(private fipeService: FipeService, private navCtrl: NavController) {
@@ -19,7 +28,10 @@ export class AnosPage implements OnInit {
     resposta => {
       console.log(resposta);
       this.anos = resposta;
+<<<<<<< HEAD
       this.allanos = this.anos;
+=======
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
       this.codigo_anos = Object.keys(resposta);
       console.log(this.codigo_anos);
     }
@@ -35,6 +47,7 @@ export class AnosPage implements OnInit {
   ngOnInit() {
   }
 
+<<<<<<< HEAD
   getItems(ev: any) {
     // Reset items back to all of the items
     this.anos = this.allanos;
@@ -51,4 +64,6 @@ export class AnosPage implements OnInit {
     }
   }
 
+=======
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
 }

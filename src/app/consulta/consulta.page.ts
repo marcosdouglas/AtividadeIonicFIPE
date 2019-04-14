@@ -10,7 +10,11 @@ import { HomePage } from '../home/home.page';
   styleUrls: ['./consulta.page.scss'],
 })
 export class ConsultaPage implements OnInit {
+<<<<<<< HEAD
   //codigo_consulta: any = [];
+=======
+  codigo_consulta: any = [];
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
   consulta: any;
 
   constructor(private fipeService: FipeService, private navCtrl: NavController) {
@@ -19,6 +23,11 @@ export class ConsultaPage implements OnInit {
     resposta => {
       console.log(resposta);
       this.consulta = resposta;
+<<<<<<< HEAD
+=======
+      this.codigo_consulta = Object.keys(resposta);
+      console.log(this.codigo_consulta);
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
     }
   );
   }

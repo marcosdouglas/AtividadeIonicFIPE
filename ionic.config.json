@@ -1,7 +1,11 @@
 {
   "name": "fipe",
+<<<<<<< HEAD
   "integrations": {
     "cordova": {}
   },
+=======
+  "integrations": {},
+>>>>>>> 9ca621a13986ff2438e9455dd1289e5653825b21
   "type": "angular"
 }
