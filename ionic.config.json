@@ -1,0 +1,7 @@
+{
+  "name": "fipe",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

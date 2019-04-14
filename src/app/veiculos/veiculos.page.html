@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Marcas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)">
+  </ion-searchbar>
+
+    <ion-list>
+      <ion-item ion-item *ngFor="let cod_marca of codigo_marcas" (click)="listaModelo(marcas[cod_marca].id);">
+        {{marcas[cod_marca].name}}
+      </ion-item>
+    </ion-list>
+</ion-content>
+

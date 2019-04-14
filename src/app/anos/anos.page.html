@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Anos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+  (ionInput)="getItems($event)">
+</ion-searchbar>
+
+    <ion-list>
+      <ion-item ion-item *ngFor="let cod_ano of codigo_anos" (click)="listaFipe(anos[cod_ano].id);">
+        {{anos[cod_ano].name}}
+      </ion-item>
+    </ion-list>
+</ion-content>
